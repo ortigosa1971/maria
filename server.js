@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 8080;
 
 app.use(helmet({
   contentSecurityPolicy: {
-    directives: {
+     directives: {
       defaultSrc: ["'self'"],
       connectSrc: ["'self'", 'https://api.weather.com', 'https://api.open-meteo.com']
     }
