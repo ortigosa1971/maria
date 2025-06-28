@@ -16,7 +16,7 @@ app.use(helmet({
 app.use(express.static('public'));
 
 app.get('/verificar-sesion', (req, res) => {
-  res.json({ activo: false }); // puedes cambiar según tu sistema de sesión
+  res.json({ activo: false });
 });
 
 app.listen(PORT, () => {
